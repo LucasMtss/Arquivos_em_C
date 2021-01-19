@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1610760186 source:c:\users\lucas\documents\curso\ed1\arquivos c\teste\main.c
+	"arquivos.c"
+	"ferramentas.c"
+
+1610758415 c:\users\lucas\documents\curso\ed1\arquivos c\teste\arquivos.c
+	"arquivos.h"
+
+1610757776 c:\users\lucas\documents\curso\ed1\arquivos c\teste\arquivos.h
+	<stdio.h>
+
+1610844416 c:\users\lucas\documents\curso\ed1\arquivos c\teste\ferramentas.c
+	"ferramentas.h"
+	"departamentos.c"
+	<stdio.h>
+
+1610757659 c:\users\lucas\documents\curso\ed1\arquivos c\teste\ferramentas.h
+	<stdio.h>
+
+1610844355 c:\users\lucas\documents\curso\ed1\arquivos c\teste\departamentos.c
+	"departamentos.h"
+	<stdio.h>
+
+1610843928 c:\users\lucas\documents\curso\ed1\arquivos c\teste\departamentos.h
+	<stdio.h>
+
