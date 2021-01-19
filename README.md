@@ -1,29 +1,29 @@
 # Arquivos em C
 Um exercício para praticar o uso de arquivos na linguagem C
 
-Principais funções
+## Principais funções usadas para manipulação de arquivos
 
-...
-fseek(ponteiro para arquivo, número de bytes pulados, local de posicionamento do ponteiro);
-...
+
+### fseek(ponteiro para arquivo, número de bytes pulados, local de posicionamento do ponteiro);
+
 * Posiciona o ponteiro no arquivo
 * SEEK_SET - início do arquivo
 * SEEK_CUR - posição corrente
 * SEEK_END - final do arquivo (número de bytes a pular é contado para trás)
 
-...
-fread(buffer que armazena o dado lido, tamanho do bloco de leitura(bytes), número de blocos a ler, ponteiro para arquivo);
-...
+
+### fread(buffer que armazena o dado lido, tamanho do bloco de leitura(bytes), número de blocos a ler, ponteiro para arquivo);
+
 * Lê os dados do arquivo
 
-...
-fwrite(buffer que armazena o dado a ser escrito no arquivo, tamanho do bloco a ser escrito(bytes), número de blocos a escrever, ponteriro para o arquivo);
-...
+
+### fwrite(buffer que armazena o dado a ser escrito no arquivo, tamanho do bloco a ser escrito(bytes), número de blocos a escrever, ponteriro para o arquivo);
+
 * Escreve dados no arquivo
 
-...
-fopen("nome do arquivo.extensao", "modo de abertura");
-...
+
+###fopen("nome do arquivo.extensao", "modo de abertura");
+
 * Abre o arquivo
 
 Modos de abertura | Significado
