@@ -22,7 +22,7 @@ Um exercício para praticar o uso de arquivos na linguagem C
 * Escreve dados no arquivo
 
 
-###fopen("nome do arquivo.extensao", "modo de abertura");
+### fopen("nome do arquivo.extensao", "modo de abertura");
 
 * Abre o arquivo
 
