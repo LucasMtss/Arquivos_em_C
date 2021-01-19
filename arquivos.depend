@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1611017043 source:c:\users\lucas\documents\curso\ed1\arquivos c\arquivos\departamento.c
-	"departamento.h"
-
-1611016934 c:\users\lucas\documents\curso\ed1\arquivos c\arquivos\departamento.h
-	<stdio.h>
-
