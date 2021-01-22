@@ -1,5 +1,5 @@
-#include "arquivos.c"
-#include "ferramentas.c"
+#include "arquivos.h"
+#include "ferramentas.h"
 
 int main(){
     FILE *arquivoDepartamentos, *arquivoFuncionarios;
