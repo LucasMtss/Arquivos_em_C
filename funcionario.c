@@ -1,5 +1,5 @@
 #include "funcionario.h"
-#include "departamentos.c"
+#include "departamentos.h"
 #include <string.h>
 
 int pesquisarFuncionario(FILE *arquivo, int id){
@@ -19,7 +19,7 @@ int pesquisarFuncionario(FILE *arquivo, int id){
 void listarFuncionarios(FILE *arquivo){
     fseek(arquivo, 0, SEEK_SET);
     TFuncionario func;
-    printf("\n\nFuncion·rios: \n");
+    printf("\n\nFuncion√°rios: \n");
     while(fread(&func, sizeof(TFuncionario), 1, arquivo) == 1){
         printf("\nID: %i\nNome: %s\nID departamento: %d\n Nome departamento: %s", func.id, func.nome, func.departamento.id, func.departamento.nome);
     }
@@ -30,7 +30,7 @@ int alterarFuncionario(FILE *arquivoFuncionarios, FILE* arquivoDepartamentos, in
     TDepartamento dp;
     posicaoFuncionario = pesquisarFuncionario(arquivoFuncionarios, idFuncionario);
     if(posicaoFuncionario == -1){
-        printf("O ID informado n„o pertence a nenhum funcionario!");
+        printf("O ID informado n√£o pertence a nenhum funcionario!");
         return -1;
     }
     fseek(arquivoFuncionarios, posicaoFuncionario * sizeof(TFuncionario), SEEK_SET);
@@ -45,10 +45,10 @@ int alterarFuncionario(FILE *arquivoFuncionarios, FILE* arquivoDepartamentos, in
     setbuf(stdin, NULL);
 
     do{
-        printf("\nInfome o ID do departamento do funcion·rio: ");
+        printf("\nInfome o ID do departamento do funcion√°rio: ");
         scanf("%d", &func.departamento.id);
         if(pesquisarDepartamento(arquivoDepartamentos, func.departamento.id) == -1)
-            printf("\nO departamento informado n„o existe!");
+            printf("\nO departamento informado n√£o existe!");
         else{
             posicaoDepartamento = pesquisarDepartamento(arquivoDepartamentos, func.departamento.id);
             fseek(arquivoDepartamentos, posicaoDepartamento * sizeof(TDepartamento), SEEK_SET);
@@ -86,10 +86,10 @@ int cadastrarFuncionario(FILE *arquivoFuncionarios, FILE *arquivoDepartamentos){
 
     listarDepartamentos(arquivoDepartamentos);
     do{
-        printf("\nInfome o ID do departamento do funcion·rio: ");
+        printf("\nInfome o ID do departamento do funcion√°rio: ");
         scanf("%d", &func.departamento.id);
         if(pesquisarDepartamento(arquivoDepartamentos, func.departamento.id) == -1)
-            printf("\nO departamento informado n„o existe!");
+            printf("\nO departamento informado n√£o existe!");
         else{
             posicaoDepartamento = pesquisarDepartamento(arquivoDepartamentos, func.departamento.id);
             fseek(arquivoDepartamentos, posicaoDepartamento * sizeof(TDepartamento), SEEK_SET);
