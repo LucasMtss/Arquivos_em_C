@@ -1,6 +1,6 @@
 #include "ferramentas.h"
-#include "departamentos.c"
-#include "funcionario.c"
+#include "departamentos.h"
+#include "funcionario.h"
 #include <stdio.h>
 
 void menu(FILE *arquivoDepartamentos, FILE *arquivoFuncionarios) {
